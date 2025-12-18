@@ -1,0 +1,30 @@
+Authorization: Bearer <access_token>
+
+
+Admin users can view, update, and delete all tasks.
+
+Normal users can access only their own tasks.
+
+Tasks are automatically linked to the logged-in user.
+
+SQLite is used as the default database for simplicity.
+
+This project is intended for learning and demonstration purposes.
+
+Make sure migrations are run before accessing the admin panel or APIs.
+
+API Endpoints
+
+POST /api/auth/register/ – Register user
+
+POST /api/auth/login/ – Login & get JWT
+
+POST /api/auth/refresh/ – Refresh token
+
+GET /api/tasks/ – List tasks
+
+POST /api/tasks/ – Create task
+
+PUT /api/tasks/{id}/ – Update task
+
+DELETE /api/tasks/{id}/ – Delete task
